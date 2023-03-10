@@ -4,6 +4,7 @@ from matplotlib.widgets import Slider
 
 fig = plt.figure()
 ax = plt.axes(projection="3d")
+plt.subplots_adjust(bottom=0.3)
 
 ax.set_xlim([-400, 0])
 ax.set_ylim([-200, 200])
