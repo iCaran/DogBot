@@ -4,6 +4,7 @@ from matplotlib.widgets import Slider
 
 fig = plt.figure()
 ax = plt.axes(projection="3d")
+plt.subplots_adjust(bottom=0.3)
 
 vec = np.array([0, 0, 100])
 
