@@ -4,6 +4,7 @@ controlling both the limb joints with seperate sliders for upper and lower joint
 
 ### THIS CODE HAS A BUG
 if the sliders are operated in this order: knee -> hip -> knee
+
 then the new knee angle will simply be added to the previous knee angle instead of being recalculated and readjusted
 
 ![buggycode2](https://user-images.githubusercontent.com/91419527/226056696-1c15ee36-b0f2-495e-a0d2-26bc8ca9f7fd.gif)
