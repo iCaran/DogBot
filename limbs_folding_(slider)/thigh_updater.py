@@ -13,7 +13,7 @@ class tu:
         self.thighs = thighs
         self.legs=legs
 
-    def update(self, slider, ax, u, val=None):
+    def update(self, slider, ax, u, fval, val=None):
 
         legs=u.legs
 
@@ -43,5 +43,6 @@ class tu:
 
         #self.thighs=t
         self.legs=l
+        u.prev=fval
 
         self.fig.canvas.draw_idle()

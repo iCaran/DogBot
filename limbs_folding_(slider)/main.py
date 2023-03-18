@@ -42,8 +42,8 @@ thighs = [t1, t2, t3, t4]
 u = updater(feet_slider, ax, fig, legs)
 t = tu(fig, thighs_slider, thighs, legs)
 
-t.slider.on_changed(lambda val: t.update(t.slider, ax, u, val))
-feet_slider.on_changed(lambda val: u.update(t, val))
+t.slider.on_changed(lambda val: t.update(t.slider, ax, u, feet_slider.val, val))
+feet_slider.on_changed(lambda val: u.update(t, u.get_var(), val))
 
 t1.plot(ax)
 t2.plot(ax)

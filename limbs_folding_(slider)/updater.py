@@ -14,16 +14,17 @@ class updater:
         self.legs=legs
         self.prev=0
 
-    def update(self, t, val=None, event=None):
+    def update(self, t, var, val=None, event=None):
 
         legs=t.legs
 
         #angle_y = self.angle_y_slider.val
-        angle_y = val
+        angle_y = val-var
         rad_y = np.radians(angle_y)
         R_y = np.array([[np.cos(rad_y), 0, np.sin(rad_y)], [0, 1, 0], [-np.sin(rad_y), 0, np.cos(rad_y)]])
 
-        angle_y2 = -self.angle_y_slider.val
+        #angle_y2 = -self.angle_y_slider.val
+        angle_y2=-(val-var)
         rad_y2 = np.radians(angle_y2)
         R_y2 = np.array([[np.cos(rad_y2), 0, np.sin(rad_y2)], [0, 1, 0], [-np.sin(rad_y2), 0, np.cos(rad_y2)]])
 
@@ -46,5 +47,10 @@ class updater:
 
         #t.legs=new
         self.legs=new
+        #self.prev=angle_y
 
         self.fig.canvas.draw_idle()
+
+    def get_var(self):
+        return self.prev
+
