@@ -4,7 +4,7 @@ class plotter:
         self.ax = ax
         self.x = [-400, 400]
         self.y = [-200, 200]
-        self.z = [800,0]
+        self.z = [800, 0]
 
     def plot(self):
         self.ax.clear()
