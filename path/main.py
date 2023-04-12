@@ -18,8 +18,8 @@ print(radius)
 theta = np.linspace(0, np.pi, 60)
 
 x = center[0] + radius*np.cos(theta)
-y = [center[1]] + np.zeros_like(theta)
-z = center[2] + np.sin(theta)
+y = [center[1]] + radius*np.zeros_like(theta)
+z = center[2] + radius*np.sin(theta)
 
 export([x,y,z])
 
