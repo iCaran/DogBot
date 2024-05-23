@@ -27,15 +27,14 @@ DogBot is a Python project focused on the kinematics of a quadruped robot. The p
 ### Controlling the limbs manually with set range of possible angles, for demonstration
 ![fixedcode](https://user-images.githubusercontent.com/91419527/226095731-e9eebcb7-80e2-46f0-9fdd-838f3e7ecbb8.gif)
 
+### PushUp
+![output](https://user-images.githubusercontent.com/91419527/227710429-8c3c6d34-0380-4d9e-b374-dae0bd7b4e6b.gif)
+
 ### End Effector trajectory, for hopping
 ![image](https://user-images.githubusercontent.com/91419527/232205572-bc9e7013-b7e2-4653-998c-c29b290ea3c5.png)
 
 ### Hopping (by calculating co-ordinates of individual End-Effector positions in a set trajectory
 ![ani](https://user-images.githubusercontent.com/91419527/232347018-cc7f32a2-8e7a-4f5c-ae35-48c3517fb823.gif)
-
-### PushUp
-![output](https://user-images.githubusercontent.com/91419527/227710429-8c3c6d34-0380-4d9e-b374-dae0bd7b4e6b.gif)
-
 
 ## Installation
 
